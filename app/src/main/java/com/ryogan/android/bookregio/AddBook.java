@@ -25,6 +25,8 @@ public class AddBook extends AppCompatActivity {
     private EditText actor;
     private EditText editorial;
     private EditText año;
+    private EditText precio;
+    private EditText categoria;
     private ImageView imagen;
     private Button saveButton;
     private Uri urii;
@@ -40,7 +42,7 @@ public class AddBook extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 //adapter.add(new Book(titulo.getText().toString(), actor.getText().toString(), editorial.getText().toString(), año.getText().toString(), urii.toString()));
-                list.add(new Book(titulo.getText().toString(), actor.getText().toString(), editorial.getText().toString(), año.getText().toString(), urii.toString()));
+                list.add(new Book(titulo.getText().toString(), actor.getText().toString(), editorial.getText().toString(), año.getText().toString(), urii.toString(), precio.getText().toString(), categoria.getText().toString()));
                 finish();
             }
         });
@@ -74,6 +76,8 @@ public class AddBook extends AppCompatActivity {
         actor = findViewById(R.id.txtAutor);
         editorial = findViewById(R.id.txtEditorial);
         año = findViewById(R.id.txtAño);
+        precio = findViewById(R.id.txtPrecio);
+        categoria = findViewById(R.id.txtCategoria);
         imagen = findViewById(R.id.image);
         saveButton = findViewById(R.id.saveButton);
     }

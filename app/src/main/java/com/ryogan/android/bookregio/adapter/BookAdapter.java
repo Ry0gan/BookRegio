@@ -71,6 +71,8 @@ public class BookAdapter extends ArrayAdapter<Book> implements Filterable {
         ImageView image = convertView.findViewById(R.id.ivExample);
         TextView titulo = convertView.findViewById(R.id.titulo);
         TextView autor = convertView.findViewById(R.id.autor);
+        TextView editorial = convertView.findViewById(R.id.editorial);
+        TextView año = convertView.findViewById(R.id.año);
         Button editButton = convertView.findViewById(R.id.editarButton);
         Button borrarButton = convertView.findViewById(R.id.borrarButton);
 
@@ -79,6 +81,9 @@ public class BookAdapter extends ArrayAdapter<Book> implements Filterable {
         Glide.with(getContext()).load(book.getImagen()).into(image);
         titulo.setText(book.getTitulo());
         autor.setText(book.getAutor());
+        editorial.setText(book.getEditorial());
+        año.setText(book.getAño());
+
 
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override

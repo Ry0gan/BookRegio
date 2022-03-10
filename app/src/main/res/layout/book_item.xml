@@ -8,8 +8,8 @@
     <ImageView
         android:id="@+id/ivExample"
         android:layout_gravity="center"
-        android:layout_width="80dp"
-        android:layout_height="100dp"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
         android:background="@color/black"></ImageView>
 
     <LinearLayout
@@ -31,6 +31,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Autor"/>
+
+        <TextView
+            android:id="@+id/editorial"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Editorial"/>
+        <TextView
+            android:id="@+id/año"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Año"/>
 
        <RelativeLayout
            android:layout_width="match_parent"
