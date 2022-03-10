@@ -27,7 +27,7 @@
         android:minHeight="80dp"
         android:maxHeight="80dp"
         android:maxWidth="80dp"
-        android:layout_marginTop="15mm"
+        android:layout_marginTop="9mm"
         android:layout_gravity="center"
         android:src="@drawable/ic_baseline_image_search_24"
         android:clickable="true"
@@ -40,7 +40,7 @@
         android:layout_gravity="center"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="30mm"
+        android:layout_marginTop="23mm"
         android:text="Titulo"
         android:textSize="30dp"
         >
@@ -54,7 +54,7 @@
         android:gravity="center"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="38mm"
+        android:layout_marginTop="30mm"
         android:background="@drawable/button_round_corner"
 
         android:inputType="text"/>
@@ -64,7 +64,7 @@
         android:layout_gravity="center"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="43mm"
+        android:layout_marginTop="33mm"
         android:text="Autor"
         android:textSize="30dp"
         >
@@ -72,6 +72,29 @@
 
     <EditText
         android:id="@+id/txtAutor"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40mm"
+        android:background="@drawable/button_round_corner"
+        android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44mm"
+        android:text="Editorial"
+        android:textSize="30dp"
+        >
+    </TextView>
+    <EditText
+        android:id="@+id/txtEditorial"
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:minWidth="200dp"
@@ -88,30 +111,7 @@
         android:layout_gravity="center"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="55mm"
-        android:text="Editorial"
-        android:textSize="30dp"
-        >
-    </TextView>
-    <EditText
-        android:id="@+id/txtEditorial"
-        android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
-        android:minWidth="200dp"
-        android:gravity="center"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="63mm"
-        android:background="@drawable/button_round_corner"
-        android:inputType="text"/>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_centerInParent="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="67mm"
+        android:layout_marginTop="54mm"
         android:text="Año"
         android:textSize="30dp"
         >
@@ -125,9 +125,59 @@
         android:gravity="center"
         android:layout_centerInParent="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="73mm"
+        android:layout_marginTop="60mm"
         android:background="@drawable/button_round_corner"
         android:inputType="text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64mm"
+        android:text="Precio"
+        android:textSize="30dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtPrecio"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="71mm"
+        android:background="@drawable/button_round_corner"
+        android:inputType="text"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="76mm"
+        android:text="Categoria"
+        android:textSize="30dp"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/txtCategoria"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:minWidth="200dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="82mm"
+        android:background="@drawable/button_round_corner"
+        android:inputType="text"/>
+
 
 
     <Button
@@ -137,7 +187,7 @@
         android:layout_alignParentTop="true"
         android:layout_centerInParent="true"
         android:layout_gravity="center"
-        android:layout_marginTop="80mm"
+        android:layout_marginTop="87mm"
         android:backgroundTint="@color/teal_700"
         android:text="Agregar"
         android:textStyle="italic"></Button>

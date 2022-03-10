@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         context = this;
-        bookArray.add(new Book("Clean Code","Robert C. Martin","PRENTICE-HALL", "2008", getURLForResource(R.drawable.cleancode)));
-        bookArray.add(new Book("Cien años de soledad","Gabriel García Márquez","Sudamericana", "1967", getURLForResource(R.drawable.cien)));
-        bookArray.add(new Book("Programming Fundamentals with Swift","Matt Neuburg","O'Reilly Media", "2019", getURLForResource(R.drawable.swift)));
+        bookArray.add(new Book("Clean Code","Robert C. Martin","PRENTICE-HALL", "2008", getURLForResource(R.drawable.cleancode), "$300", "Educación"));
+        bookArray.add(new Book("Cien años de soledad","Gabriel García Márquez","Sudamericana", "1967", getURLForResource(R.drawable.cien),"$450", "Novela"));
+        bookArray.add(new Book("Programming Fundamentals with Swift","Matt Neuburg","O'Reilly Media", "2019", getURLForResource(R.drawable.swift),"$150", "Educación"));
 
 
         searchView = (SearchView)findViewById(R.id.searchView);

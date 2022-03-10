@@ -8,14 +8,18 @@ public class Book implements Serializable {
     private String editorial;
     private String año;
     private String imagen;
+    private String precio;
+    private String categoria;
 
 
-    public Book(String titulo, String autor, String editorial, String año, String imagen) {
+    public Book(String titulo, String autor, String editorial, String año, String imagen, String precio, String categoria) {
         this.titulo = titulo;
         this.autor = autor;
         this.editorial = editorial;
         this.año = año;
         this.imagen = imagen;
+        this.precio = precio;
+        this.categoria = categoria;
     }
 
     public String getTitulo() {
@@ -57,4 +61,13 @@ public class Book implements Serializable {
     public void setImagen(String imagen) {
         this.imagen = imagen;
     }
+
+    public String getPrecio(){ return precio; }
+
+    public void setPrecio(String precio) { this.precio = precio; }
+
+    public String getCategoria(){ return categoria; }
+
+    public void setCategoria(String categoria) { this.categoria = categoria; }
+
 }

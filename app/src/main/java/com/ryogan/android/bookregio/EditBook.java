@@ -25,6 +25,8 @@ public class EditBook extends AppCompatActivity {
     private EditText actor;
     private EditText editorial;
     private EditText año;
+    private EditText precio;
+    private EditText categoria;
     private ImageView imagen;
     private Button editButton;
     private Uri urii;
@@ -42,6 +44,8 @@ public class EditBook extends AppCompatActivity {
         actor.setText(book.getAutor());
         editorial.setText(book.getEditorial());
         año.setText(book.getAño());
+        precio.setText(book.getPrecio());
+        categoria.setText(book.getCategoria());
         editButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -51,7 +55,13 @@ public class EditBook extends AppCompatActivity {
                         book2.setAutor(actor.getText().toString());
                         book2.setEditorial(editorial.getText().toString());
                         book2.setAño(año.getText().toString());
-                        book2.setImagen(urii.toString());
+                        book2.setPrecio(precio.getText().toString());
+                        book2.setCategoria(categoria.getText().toString());
+                        if (urii != null){
+                            book2.setImagen(urii.toString());
+                        }else{
+                            book2.setImagen(book.getImagen());
+                        }
                         break;
                     }
                 }
@@ -78,6 +88,8 @@ public class EditBook extends AppCompatActivity {
             this.urii = path;
             Glide.with(this).load(path).into(imagen);
 
+        }else{
+            this.urii = null;
         }
     }
 
@@ -87,6 +99,8 @@ public class EditBook extends AppCompatActivity {
         actor = findViewById(R.id.txtAutor);
         editorial = findViewById(R.id.txtEditorial);
         año = findViewById(R.id.txtAño);
+        precio = findViewById(R.id.txtPrecio);
+        categoria = findViewById(R.id.txtCategoria);
         imagen = findViewById(R.id.image);
         editButton = findViewById(R.id.EditButton);
     }
